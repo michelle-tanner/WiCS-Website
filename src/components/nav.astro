@@ -1,6 +1,6 @@
 <body>
-    <!-- <nav>
-        <ul>
+    <nav>
+        <ul class="sidebar">
             <li><a href='/events'>Events</a></li>
             <li><a href='/resources'>Resources</a></li>
             <li><a href='/join-wics'>Join WiCS</a></li>
@@ -8,7 +8,7 @@
             <li><a href='/our-team'>Our Team</a></li>
             <li><a href='/collaborate'>Collaborate</a></li>
         </ul>
-    </nav> -->
+    </nav>
     
     <nav>
         <ul>
@@ -35,7 +35,7 @@
         
     }
     nav ul {
-        width: 100%;
+        /* width: 100%; */
         list-style: none;
         display: flex;
         justify-content: center;
@@ -54,5 +54,29 @@
     }
     nav a:hover {
         color: rgb(222, 42, 102);
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 50px;
+        /* height: 100vh; */
+        width: 250px;
+        z-index: 999;
+        background-color: pink;
+        backdrop-filter: blur(10px);
+        box-shadow: -3px 0 4px rgba(80, 79, 79, 0.4);
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        /* justify-content: flex-start; */
+    }
+    .sidebar li {
+        width: 100%;
+    }
+    .sidebar a {
+        color: white;
+        width: 100%;
     }
 </style>
