@@ -1,4 +1,15 @@
 <body>
+    <!-- <nav>
+        <ul>
+            <li><a href='/events'>Events</a></li>
+            <li><a href='/resources'>Resources</a></li>
+            <li><a href='/join-wics'>Join WiCS</a></li>
+            <li><a href='/'>LOGO</a></li>
+            <li><a href='/our-team'>Our Team</a></li>
+            <li><a href='/collaborate'>Collaborate</a></li>
+        </ul>
+    </nav> -->
+    
     <nav>
         <ul>
             <li><a href='/events'>Events</a></li>
@@ -15,6 +26,33 @@
 <style>
     body {
         min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav {
+        background-color: pink;
+        box-shadow: 0px 3px 4px rgba(80, 79, 79, 0.4);
+        border-radius: 20px 20px 20px 20px;
         
+    }
+    nav ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav li {
+        height: 50px;
+    }
+    nav a {
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    nav a:hover {
+        color: rgb(222, 42, 102);
     }
 </style>
