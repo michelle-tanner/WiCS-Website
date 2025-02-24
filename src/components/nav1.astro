@@ -1,4 +1,4 @@
-<!-- <nav>
+<nav>
     <ul class="sidebar">
         <li><a href='/events'>Events</a></li>
         <li><a href='/resources'>Resources</a></li>
@@ -7,14 +7,16 @@
         <li><a href='/collaborate'>Collaborate</a></li>
         <li><a href='/'>LOGO</a></li>
     </ul>
-</nav> -->
+</nav>
 
 <nav class="top-nav">
-    <ul>
+    <ul class="hideOnMobile">
         <li><a href='/events'>Events</a></li>
         <li><a href='/resources'>Resources</a></li>
         <li><a href='/join-wics'>Join WiCS</a></li>
-        <li><a href='/'>LOGO</a></li>
+        <li>
+            <a href='/'><img src="src/assets/logo.png" alt="Logo" width="50px" height="auto"></a>
+        </li>
         <li><a href='/our-team'>Our Team</a></li>
         <li><a href='/collaborate'>Collaborate</a></li>
     </ul>
@@ -40,6 +42,7 @@
         right: 0;
         left: 0;
         margin: auto;
+
     }
 
     nav ul {
@@ -65,6 +68,8 @@
     }
 
     .sidebar {
+        visibility: hidden;
+        /* visibility: visible; */
         position: fixed;
         z-index: 999;
         
@@ -90,4 +95,21 @@
         color: white;
         width: 100%;
     }
+    @media(max-width: 1080px) {
+        .hideonMobile {
+            visibility: hidden;
+            /* display: none; */
+        }
+    }
 </style>
+
+<!-- <script>
+    function showSideBar() {
+        const sidebar = document.querySelector('.siderbar');
+        sidebar.style.visibility = 'visible';
+    }
+    function hideSideBar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.visibility = 'hidden';
+    }
+</script> -->
